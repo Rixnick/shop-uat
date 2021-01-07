@@ -1,0 +1,223 @@
+@import "./variables";
+
+.checkout-page {
+      background: $background1;
+      align-items: center;
+      padding: 0rem 5.5rem;
+}
+
+.checkout-content {
+      position: relative;
+      transition: margin-left 500ms;
+      align-items: center;
+}
+
+main {
+      // margin-top: 60px;
+      background: $background1;
+      min-height: 95vh;
+      padding: 1rem 3rem;
+}
+
+.dash-title {
+      color: $main-color;
+      margin-left: 1rem;
+}
+
+.checkout-grid {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      column-gap: 2rem;
+      
+}
+
+.summary-checkout {
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 1px 1px 1px  rgba(0,0,0,0.3);
+}
+.summary-checkout table {
+      width: 100%;
+      border-collapse: collapse;
+}
+
+.summary-checkout thead {
+      background: #efefef;
+      text-align: left;
+}
+
+th {
+      font-size: 1rem;
+      padding: 1rem 1rem;
+      color: var(--color-dark);
+}
+
+td {
+      font-size: 0.9rem;
+      //   width: 100%;
+}
+
+.bill-title {
+      color: $main-color;
+      margin-left: 1rem;
+}
+
+.checkout-header-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 2rem;
+      margin-bottom: 3rem;
+}
+
+.checkout-header-card-single {
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+//***********************************************
+
+.checkout-info-cards {
+      display: grid;
+      grid-template-columns: 65% 33%;
+      column-gap: 1.5rem;
+}
+
+.summary-checkout-single {
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.summary-checkout-single h3 {
+      color: $main-color;
+      margin-left: 0.7rem;
+}
+.summary-checkout-single form {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 95%;
+      margin-bottom: 1.3rem;
+
+      input {
+            width: 98%;
+            border: 0.5px solid teal;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+      }
+}
+
+label {
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+}
+
+.select-state { 
+    margin-top: 1rem;
+    margin-right: .5rem;
+}
+
+.summary-checkout-single .select-state {
+      display: flex;
+      justify-content: space-between;
+      input {
+            width: 38%;
+            border: 0.5px solid teal;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            margin: 5px;
+            padding: 5px;
+      }
+}
+
+.summary-checkout-single .submit-state {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+}
+
+.submit-state {
+    margin-right: .3rem;
+}
+
+.submit-state .btn__cancel {
+      width: 15%;
+      background: $text-grey;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 5px;
+      margin: 0.25rem;
+      padding: 0.25rem;
+}
+
+.submit-state  .btn__submit {
+    width: 15%;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+
+.credit-state {
+      display: flex;
+      justify-content: space-between;
+}
+
+.card_logo  {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: .5rem;
+    margin-bottom: 1.7rem;
+}
+
+// .card_logo div {
+//       height: 80px;
+//       width: 60px;
+//       border-radius: 15px;
+//       border: 1px solid #efefef;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-image: url("../assets/images/1.jpg");
+//       margin-right: 1rem;
+// }
+
+.credit-info {
+    margin-bottom: 1.5rem;
+}
+
+
+.btn-payment__omise {
+    width: 100%;
+    background:blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+
+.btn_payment__stripe {
+    width: 100%;
+    background:blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    margin-top: 1.3rem;
+}

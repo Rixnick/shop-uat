@@ -1,0 +1,226 @@
+@import "./variables";
+
+// .site-navigation {
+//     display: none;
+// }
+
+//Main Content Style
+.main-content {
+        position: relative;
+        margin-left: 260px;
+        transition: margin-left 500ms;
+}
+
+
+main {
+    // margin-top: 60px;
+    background: $background1;
+    min-height: 95vh;
+    padding: 1rem 3rem;
+}
+
+.dash-title {
+    color: $main-color;
+    margin-bottom: 1rem;
+}
+
+.dash-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+}
+
+.card-single  {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,0.3);
+}
+
+.card-body {
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-body span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+}
+
+.card-body h5 {
+    color: $text-grey;
+    font-size: 1.2rem;
+}
+
+.card-body h4 {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    margin-top: .5rem;
+}
+
+.card-footer {
+    padding: .2rem 1rem;
+    background: #f9fafc;
+}
+
+.card-footer  a {
+    color: $main-color;
+}
+
+
+/* Recent Card Style */
+.recent {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: 75% 23%;
+    column-gap: 2.5rem;
+}
+
+.activity-card , 
+.summary-card, 
+.bday-card {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,0.3);
+}
+
+.activity-card  h3{ 
+    color: var(--text-grey);
+    margin: 1rem;
+}
+
+.activity-card  table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+ .activity-card  thead{
+    background: #efefef;
+    text-align: left;
+  }
+
+th, td{
+        font-size: .9rem;
+        padding: 1rem  1rem;
+        color: var(--color-dark);
+  }
+
+  td {
+      font-size: .8rem;
+  }
+
+  .td-team {
+    display: flex;
+    align-items: center;
+}
+.img-1,
+.img-2,
+.img-3 {
+      height: 38px;
+      width: 38px;
+      border-radius: 50%;
+      margin-left: -10px;
+      border: 3px solid #efefef;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+.img-1 {
+      background-image: url('../assets/images/1.jpg');
+}
+.img-2 {
+      background-image: url('../assets/images/1.jpg');
+}
+.img-3 {
+      background-image: url('../assets/images/1.jpg');
+  }
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+.badge {
+    padding: .2rem 1rem;
+    border-radius: 20px;
+   font-weight: 700;
+   font-size: .7rem;
+}
+.badge.success {
+    background: #DEF7EC;
+    color: $main-color;
+}
+
+.badge.warning {
+  background: #F0F6B2;
+  color: orange;
+}
+
+.summary-card {
+  margin-bottom: 1.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.summary-single {
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.summary-single span{
+  font-size: 1.5rem;
+  color: #777;
+  padding-right: 1rem;
+}
+
+.summary-single  h3 {
+   color: $main-color;
+   font-size: 1.1rem;
+   margin-right: .5rem !important;
+}
+
+.summary-single small {
+   font-weight: 700;
+   color: $text-grey;
+}
+
+
+.bday-flex {
+   display: flex;
+   align-items: center;
+   margin-bottom: .3rem;
+}
+
+.bday-card {
+  padding: 1rem;
+}
+.bday-image  {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/1.jpg');
+  margin-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center  button {
+    background: $main-color;
+    color: #fff;
+    border: 1px solid $main-color;
+    border-radius: 4px;
+    padding: .4rem 1rem;
+}
+
+.text-center  span {
+    margin-left: .5rem;
+}
+.table-responsive {
+  overflow-x: auto;
+}

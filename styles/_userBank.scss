@@ -1,0 +1,87 @@
+@import "./variables";
+
+
+// .site-navigation {
+//     display: none;
+// }
+
+
+.main-bankAcs-content {
+    position: relative;
+    margin-left: 260px;
+    transition: margin-left 500ms;
+}
+
+main {
+    // margin-top: 60px;
+    background: $background1;
+    min-height: 95vh;
+    padding: 1rem 3rem;
+}
+
+.dash-title {
+    color: $main-color;
+    margin-bottom: 0rem;
+}
+
+.bank-card {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,0.3);
+}
+ .bank_card__head {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .bank_card__head  a {
+    margin: 1.5rem .8rem;
+    font-size: 18px;
+    font-weight: 500;
+ }
+
+.bank-card   h3 {
+    color: $text-light;
+    margin: 1rem;
+}
+
+.bank-card table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+
+.bank-card  thead{
+    background: #efefef;
+    text-align: left;
+  }
+
+  th, td{
+    font-size: .9rem;
+    padding: 1rem  1rem;
+    color: $text-grey;
+}
+
+td {
+  font-size: .8rem;
+}
+
+
+.td-team {
+    display: flex;
+    align-items: center;
+}
+
+.td-team img {
+    height: 55px;
+    width: 55px;
+    border-radius: 7px;
+    margin-left: -10px;
+    border: .25px solid #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table-responsive {
+    overflow-x: auto;
+  }

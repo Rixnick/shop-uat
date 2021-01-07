@@ -1,0 +1,90 @@
+@import "./variables";
+
+.product-page {
+   //background: $background1;
+   align-items: center;
+   padding: 0rem 5.5rem;
+   background: $background1;
+}
+
+main {
+    // margin-top: 60px;
+    
+    min-height: 95vh;
+    padding: 1rem 3rem;
+   
+}
+
+.product-content {
+    position: relative;
+    transition: margin-left 500ms;
+    align-items: center;
+    //background: $background1;
+}
+
+.product-cards {
+    margin-top: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    column-gap: 1.1rem;
+    height: 300px;
+}
+
+.product-cart-single {
+    margin-top: 1.3rem;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 1px 2px 1px  rgba(0,0,0,0.3);
+    margin-bottom: 1.3rem;
+}
+
+
+.produc-card-header img {
+    height: 275px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    object-fit: contain;
+    margin-left: 0rem;
+    padding: 0rem .3rem;
+}
+
+.produc-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__body {
+    display: flex;
+}
+
+.produc-card-body div {
+    color: $main-color;
+}
+
+.produc-card-body  h2 {
+    margin-left: .5rem;
+    color: $main-color;
+    font-size: 1rem;
+}
+
+.produc-card-body  h3 {
+    color: red;
+    font-size: .9rem;
+    margin-right: .5rem;
+}
+// .product-cart-single p {
+//     margin-bottom: 1rem;
+// }
+
+.produc-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem 1rem;
+    background: $background1;
+}
+
+.produc-card-footer a {
+    color: $main-color;
+}

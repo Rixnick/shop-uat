@@ -1,0 +1,16 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/products": "pages/products.js",
+  "/signin": "pages/signin.js",
+  "/dashboard": "pages/dashboard.js",
+  "/userProfile": "pages/userProfile.js",
+  "/userProducts": "pages/userProducts.js",
+  "/categories": "pages/categories.js",
+  "/brands": "pages/brands.js",
+  "/userBank": "pages/userBank.js",
+  "/userCart": "pages/userCart.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+}

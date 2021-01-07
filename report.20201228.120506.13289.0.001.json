@@ -1,0 +1,383 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201228.120506.13289.0.001.json",
+    "dumpEventTime": "2020-12-28T12:05:06Z",
+    "dumpEventTimeStamp": "1609131906601",
+    "processId": 13289,
+    "cwd": "/home/loki/Desktop/Projects/Shoppin/shop-client",
+    "commandLine": [
+      "/home/loki/.nvm/versions/node/v11.15.0/bin/node",
+      "/home/loki/Desktop/Projects/Shoppin/shop-client/node_modules/.bin/next",
+      "dev"
+    ],
+    "nodejsVersion": "v11.15.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.12",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "11.15.0",
+      "v8": "7.0.276.38-node.19",
+      "uv": "1.27.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.37.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.15.0/node-v11.15.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.15.0/node-v11.15.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.0-58-generic",
+    "osVersion": "#64~18.04.1-Ubuntu SMP Wed Dec 9 17:11:11 UTC 2020",
+    "osMachine": "x86_64",
+    "host": "laviosa"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000a702fd",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x000000000095ccb3",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3dbde",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3de14",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f3ce52",
+      "symbol": " [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f3cf58",
+      "symbol": "v8::internal::Heap::CheckIneffectiveMarkCompact(unsigned long, double) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f49678",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f4a18b",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f4cec1",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f170f4",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x00000000011cd3fe",
+      "symbol": "v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [/home/loki/.nvm/versions/node/v11.15.0/bin/node]"
+    },
+    {
+      "pc": "0x000023fb0f14fc5d",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1490481152,
+    "totalCommittedMemory": 1489105808,
+    "usedMemory": 1438755248,
+    "availableMemory": 45394448,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 42224,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 16777216,
+        "committedMemory": 16776888,
+        "capacity": 8249344,
+        "used": 131608,
+        "available": 8117736
+      },
+      "old_space": {
+        "memorySize": 444796928,
+        "committedMemory": 444364040,
+        "capacity": 415704304,
+        "used": 415146456,
+        "available": 557848
+      },
+      "code_space": {
+        "memorySize": 7340032,
+        "committedMemory": 7204480,
+        "capacity": 6243840,
+        "used": 6243840,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 6303744,
+        "committedMemory": 5979232,
+        "capacity": 4629440,
+        "used": 4629440,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1014738944,
+        "committedMemory": 1014738944,
+        "capacity": 1048807184,
+        "used": 1012570384,
+        "available": 36236800
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 421.596,
+    "kernelCpuSeconds": 19.0359,
+    "cpuConsumptionPercent": 4.54541,
+    "maxRss": 1654112256,
+    "pageFaults": {
+      "IORequired": 813,
+      "IONotRequired": 3143134
+    },
+    "fsActivity": {
+      "reads": 631344,
+      "writes": 2870408
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 193.714,
+    "kernelCpuSeconds": 10.5961,
+    "cpuConsumptionPercent": 2.1076,
+    "fsActivity": {
+      "reads": 208888,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SDKMAN_VERSION": "5.9.0+555",
+    "LC_TIME": "en_US.UTF-8",
+    "USER": "loki",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_user_agent": "yarn/1.22.5 npm/? node/v11.15.0 linux x64",
+    "XDG_SEAT": "seat0",
+    "TEXTDOMAIN": "im-config",
+    "npm_package_dependencies__quasar_extras": "^1.9.10",
+    "npm_config_bin_links": "true",
+    "SSH_AGENT_PID": "9752",
+    "XDG_SESSION_TYPE": "x11",
+    "npm_node_execpath": "/home/loki/.nvm/versions/node/v11.15.0/bin/node",
+    "npm_config_init_version": "1.0.0",
+    "SHLVL": "1",
+    "npm_package_scripts_start_prod": "next start -p 80",
+    "QT4_IM_MODULE": "xim",
+    "HOME": "/home/loki",
+    "OLDPWD": "/home/loki/Desktop/Projects/Shoppin",
+    "LESS": "-R",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_BIN": "/home/loki/.nvm/versions/node/v11.15.0/bin",
+    "ZSH": "/home/loki/.oh-my-zsh",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "npm_config_init_license": "MIT",
+    "GRADLE_HOME": "/opt/gradle/gradle-6.2",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "GTK_MODULES": "gail:atk-bridge",
+    "PAGER": "less",
+    "YARN_WRAP_OUTPUT": "false",
+    "npm_config_version_tag_prefix": "v",
+    "LC_MONETARY": "en_US.UTF-8",
+    "npm_package_dependencies_graphql_tag": "^2.11.0",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_package_dependencies_dotenv": "^8.2.0",
+    "npm_package_dependencies_dayjs": "^1.9.5",
+    "COLORTERM": "truecolor",
+    "npm_package_description": "First, run the development server:",
+    "npm_package_dependencies_apollo_cache_inmemory": "^1.6.6",
+    "npm_package_dependencies_antd": "^4.9.1",
+    "NVM_DIR": "/home/loki/.nvm",
+    "npm_package_readmeFilename": "README.md",
+    "IM_CONFIG_PHASE": "2",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "npm_package_scripts_dev": "next dev",
+    "LOGNAME": "loki",
+    "GTK_IM_MODULE": "ibus",
+    "DESKTOP_AUTOSTART_ID": "10e1ba4d7f8de17c18160912197391158100000096670007",
+    "UPDATE_ZSH_DAYS": "13",
+    "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+    "_": "/usr/bin/yarn",
+    "npm_package_private": "true",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "npm_package_dependencies_apollo_link_http": "^1.5.17",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "XDG_SESSION_ID": "7",
+    "USERNAME": "loki",
+    "TERM": "xterm-256color",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "next start",
+    "npm_config_ignore_scripts": "",
+    "WINDOWPATH": "2",
+    "PATH": "/tmp/yarn--1609122212506-0.6986079722987357:/home/loki/Desktop/Projects/Shoppin/shop-client/node_modules/.bin:/home/loki/.config/yarn/link/node_modules/.bin:/home/loki/.yarn/bin:/home/loki/.nvm/versions/node/v11.15.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/loki/.nvm/versions/node/v11.15.0/lib/node_modules/npm/bin/node-gyp-bin:/home/loki/.nvm/versions/node/v11.15.0/bin/node_modules/npm/bin/node-gyp-bin:/home/loki/.deno/bin:/users/loki/flutter/bin:/home/loki/.nvm/versions/node/v11.15.0/bin:/home/loki/.local/bin:/opt/gradle/gradle-6.2/bin:/opt/GitHub Desktop:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/loki/.dotnet/tools:/home/loki/Android/Sdk/emulator:/home/loki/Android/Sdk/tools:/home/loki/Android/Sdk/tools/bin:/home/loki/Android/Sdk/platform-tools:/<flutter/extracted/location>/bin",
+    "NODE": "/home/loki/.nvm/versions/node/v11.15.0/bin/node",
+    "SESSION_MANAGER": "local/laviosa:@/tmp/.ICE-unix/9667,unix/laviosa:/tmp/.ICE-unix/9667",
+    "PAPERSIZE": "letter",
+    "SDKMAN_CANDIDATES_DIR": "/home/loki/.sdkman/candidates",
+    "npm_package_dependencies_swiper": "^6.3.5",
+    "npm_package_name": "shop-client",
+    "XDG_MENU_PREFIX": "gnome-",
+    "LC_ADDRESS": "en_US.UTF-8",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "GNOME_TERMINAL_SCREEN": "/org/gnome/Terminal/screen/9a9de644_1eec_4231_a4fa_8675a8f96085",
+    "S_COLORS": "auto",
+    "DISPLAY": ":1",
+    "DENO_INSTALL": "/home/loki/.deno",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "LC_TELEPHONE": "en_US.UTF-8",
+    "npm_package_dependencies_react_dom": "16.13.1",
+    "GNOME_TERMINAL_SERVICE": ":1.93",
+    "XMODIFIERS": "@im=ibus",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "SDKMAN_DIR": "/home/loki/.sdkman",
+    "SDKMAN_PLATFORM": "Linux64",
+    "npm_lifecycle_script": "next dev",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "npm_config_version_git_message": "v%s",
+    "SHELL": "/usr/bin/zsh",
+    "LC_NAME": "en_US.UTF-8",
+    "npm_lifecycle_event": "dev",
+    "npm_package_version": "0.1.0",
+    "GDMSESSION": "ubuntu",
+    "QT_ACCESSIBILITY": "1",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\"]}",
+    "npm_package_dependencies_graphql": "^15.3.0",
+    "npm_package_dependencies_cookie": "^0.4.1",
+    "npm_package_scripts_build": "next build && next export",
+    "LC_MEASUREMENT": "en_US.UTF-8",
+    "npm_package_dependencies_next_with_apollo": "^5.1.0",
+    "npm_package_dependencies_apollo_link_context": "^1.0.20",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_git_sign": "",
+    "LC_IDENTIFICATION": "en_US.UTF-8",
+    "TEXTDOMAINDIR": "/usr/share/locale/",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "npm_package_dependencies_sass": "^1.29.0",
+    "npm_package_dependencies_react_facebook_login": "^4.1.1",
+    "npm_config_strict_ssl": "true",
+    "QT_IM_MODULE": "ibus",
+    "XDG_VTNR": "2",
+    "npm_package_dependencies_js_cookie": "^2.2.1",
+    "PWD": "/home/loki/Desktop/Projects/Shoppin/shop-client",
+    "npm_execpath": "/usr/share/yarn/bin/yarn.js",
+    "CLUTTER_IM_MODULE": "xim",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "ANDROID_HOME": "/home/loki/Android/Sdk",
+    "NVM_CD_FLAGS": "-q",
+    "npm_package_dependencies_apollo_client": "^2.6.10",
+    "LC_NUMERIC": "en_US.UTF-8",
+    "npm_config_save_prefix": "^",
+    "npm_config_ignore_optional": "",
+    "LC_PAPER": "en_US.UTF-8",
+    "npm_package_dependencies_next": "^10.0.1",
+    "npm_package_dependencies_isomorphic_unfetch": "^3.0.0",
+    "npm_package_dependencies__apollo_react_hooks": "^4.0.0",
+    "VTE_VERSION": "5202",
+    "npm_package_dependencies__zeit_next_sass": "^1.0.1",
+    "INIT_CWD": "/home/loki/Desktop/Projects/Shoppin/shop-client",
+    "npm_package_dependencies_react": "16.13.1",
+    "NODE_ENV": "development",
+    "__NEXT_PROCESSED_ENV": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 4096,
+      "hard": 4096
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 29326,
+      "hard": 29326
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2",
+    "/lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2",
+    "/lib/x86_64-linux-gnu/libnss_dns.so.2",
+    "/lib/x86_64-linux-gnu/libresolv.so.2",
+    "/lib/x86_64-linux-gnu/libnss_myhostname.so.2"
+  ]
+}

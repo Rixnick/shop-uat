@@ -1,0 +1,72 @@
+@import "./variables";
+
+.cart-page {
+    align-items: center;
+   padding: 0rem 265px;
+   background: $background1;
+}
+
+.cart__content {
+    position: relative;
+    transition: margin-left 500ms;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 1px 2px 1px  rgba(0,0,0,0.3);
+}
+
+.dash-title {
+    color: $main-color;
+    margin-bottom: 1rem;
+}
+
+main {
+    // margin-top: 60px;
+    
+    min-height: 95vh;
+    padding: 1rem 3rem;
+   
+}
+
+.error__card {
+    font-size: 18px;
+    color: red;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+ thead{
+    background: #efefef;
+    text-align: left;
+  }
+
+
+  th, td{
+    font-size: .9rem;
+    padding: 1rem  1rem;
+    color: var(--color-dark);
+}
+
+td {
+  font-size: 1rem;
+}
+
+img {
+    height: 120px;
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    object-fit: contain;
+}
+
+tfoot {
+    font-size: 1.3rem;
+    color: $main-color;
+}

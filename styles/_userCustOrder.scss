@@ -1,0 +1,66 @@
+@import "./variables";
+
+// .site-navigation {
+//     display: none;
+// }
+
+
+.main-products-content {
+    position: relative;
+    margin-left: 260px;
+    transition: margin-left 500ms;
+}
+
+main {
+    // margin-top: 60px;
+    background: $background1;
+    min-height: 95vh;
+    padding: 1rem 3rem;
+}
+
+
+.dash-title {
+    color: $main-color;
+    margin-bottom: 1rem;
+}
+
+.recent-orders {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.orders-card{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,0.3);
+}
+
+.orders-card h3 {
+    color: $text-light;
+    margin: 1rem;
+}
+
+.orders-card table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+.orders-card thead{
+    background: #efefef;
+    text-align: left;
+  }
+
+
+  th, td{
+    font-size: .9rem;
+    padding: 1rem  1rem;
+    color: $text-grey;
+}
+
+td {
+  font-size: .8rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+  }

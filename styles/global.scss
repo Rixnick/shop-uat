@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("../assets/themify-icons/css/themify-icons.css");
+@import "./_variables.scss";
+@import "./login.scss";
+@import "./product_detail.scss";
+@import "./products.scss";
+@import "./requestResetPassword.scss";
+@import "./sidebar.scss";
+@import "./signup.scss";
+@import "./banner.scss";
+@import "./home.scss";
+@import "./navigation";
+@import "./modal.scss";
+@import "./backdrop";
+
+// User Admin Style
+@import "./dashboard";
+@import "./header";
+@import "./userbrands";
+@import "./userProducts";
+@import "./user_create_product";
+@import "./userCategories";
+@import "./userProfile";
+@import "./userCustOrder";
+@import "./userSaleOut";
+@import "./userBank";
+@import "./userCart";
+@import "./userCheckout";
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    //background: $background;
+}

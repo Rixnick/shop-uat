@@ -1,0 +1,96 @@
+@import "./variables";
+
+// .site-navigation {
+//     display: none;
+// }
+
+
+.create-products-content {
+    position: relative;
+    margin-left: 260px;
+    transition: margin-left 500ms;
+}
+
+main {
+    // margin-top: 60px;
+    background: $background1;
+    min-height: 95vh;
+    padding: 1rem 3rem;
+}
+
+.dash-title {
+    color: $main-color;
+    margin-bottom: 1rem;
+}
+
+.create-product-card {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px  rgba(0,0,0,0.3);
+    // display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 2.5rem;
+}
+.create-product_tabs {
+    margin-right: 1rem;
+}
+.create-product_form {
+    margin-left: 1.3rem;
+    margin-right: 2.3rem;
+}
+
+.create-product-card label {
+    margin-left: 1rem;
+}
+
+.create-product-card input {
+    width: 95%;
+    border: 0.5px solid teal;
+    margin: 0 5px 5px 5px;
+    padding: 0 5px 5px 5px;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    margin-left: .9rem;
+}
+
+.create-product-card textarea {
+    width: 95%;
+    border: 0.5px solid teal;
+    margin: 0 5px 5px 5px;
+    padding: 0 5px 5px 5px;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    margin-left: .9rem;
+}
+
+.create-product-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit {
+    width: 15%;
+    margin: 5px;
+    padding: 5px;
+    background: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+}
+
+.btn-back-products {
+    width: 15%;
+    margin: 5px;
+    padding: 5px;
+    background: rgb(91, 95, 95);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+}

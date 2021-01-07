@@ -1,0 +1,127 @@
+@import "./variables";
+
+// .site-navigation {
+//     display: none;
+// }
+
+
+.main-products-content {
+    position: relative;
+    margin-left: 260px;
+    transition: margin-left 500ms;
+}
+
+main {
+    // margin-top: 60px;
+    background: $background1;
+    min-height: 95vh;
+    padding: 1rem 3rem;
+}
+.product-content__header {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        margin-top: 1.3rem;
+        margin-right: .5rem;
+        font-size: 18px;
+    }
+}
+
+
+.dash-title {
+    color: $main-color;
+    margin: .5rem .5rem;
+}
+
+.recent-products {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2.5rem;
+}
+
+.products-card  {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px  rgba(0,0,0,0.3);
+}
+
+.product-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.products-card h3 {
+    color: $text-light;
+    margin: 1rem;
+}
+
+.product-card-header button {
+    // width: 100%;
+    margin: 5px;
+    padding: 5px;
+    background: $main-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-right: 1.3rem;
+}
+
+.product-card-header span {
+    font-size: 1rem;
+}
+
+.product-card-header small {
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+}
+.products-card table{
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+ }
+
+
+ .products-card thead{
+    background: #efefef;
+    text-align: left;
+  }
+
+  th, td{
+    font-size: .9rem;
+    padding: 1rem  1rem;
+    color: $text-grey;
+}
+
+td {
+  font-size: 1rem;
+}
+
+
+.td-team {
+    display: flex;
+    align-items: center;
+}
+
+.td-team img {
+    height: 55px;
+    width: 55px;
+    border-radius: 7px;
+    margin-left: -10px;
+    border: .25px solid #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table-responsive {
+    overflow-x: auto;
+  }
